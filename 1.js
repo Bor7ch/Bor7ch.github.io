@@ -1,4 +1,5 @@
 document.getElementById('myslide').onmousemove = function (event){
+     document.getElementById('myslide').ontouchmove;
     document.getElementById('two').style.transition = 'all 0.05s';
     var x = event.offsetX; 
     console.log(x);
