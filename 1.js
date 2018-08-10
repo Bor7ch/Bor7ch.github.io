@@ -1,5 +1,8 @@
 document.getElementById('myslide').onmousemove = function (event){
-     document.getElementById('myslide').ontouchmove;
+    document.getElementById('myslide').ontouchmove = function (event){
+    document.getElementById('two').style.transition = 'all 0.05s';
+    var x = event.offsetX;
+    }
     document.getElementById('two').style.transition = 'all 0.05s';
     var x = event.offsetX; 
     console.log(x);
@@ -10,4 +13,5 @@ document.getElementById('myslide').onmousemove = function (event){
         document.getElementById('two').style.transition = 'all 0.5s';
     }
     
+
 
